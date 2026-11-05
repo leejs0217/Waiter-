@@ -92,8 +92,14 @@ const views = {
       <div class="relative max-w-lg">
         <span class="chip border-brand/30 text-brand"><span class="w-1.5 h-1.5 rounded-full bg-brand"></span>대리 웨이팅 플랫폼</span>
         <h2 class="text-3xl lg:text-[40px] font-bold tracking-tight leading-tight mt-5">줄 서는 시간을<br/><span class="text-brand">돈으로</span> 바꾸세요</h2>
-        <p class="text-mute mt-4 leading-relaxed">인기 상품, 팝업, 맛집 웨이팅을 안전하게 맡기세요.<br class="hidden sm:block"/>익명 채팅 · 안전결제 · 실시간 시세 지원</p>
-        <div class="flex flex-wrap gap-2.5 mt-7">
+        st.markdown("""
+<p class="text-mute mt-4 leading-relaxed">
+    인기 상품, 팝업, 맛집 웨이팅을 안전하게 맡기세요.
+    <br class="hidden sm:block"/>
+    익명 채팅 · 안전결제 · 실시간 시세 지원
+</p>
+""", unsafe_allow_html=True)
+<div class="flex flex-wrap gap-2.5 mt-7">
           <button data-go="request" class="btn-primary h-11 px-5"><i data-lucide="file-plus-2" class="w-4 h-4"></i>웨이팅 의뢰하기</button>
           <button data-go="market" class="btn-ghost h-11 px-5"><i data-lucide="trending-up" class="w-4 h-4"></i>시세 보기</button>
         </div>
