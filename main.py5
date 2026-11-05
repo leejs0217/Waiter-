@@ -1,0 +1,27 @@
+:root { color-scheme: dark; }
+body { letter-spacing: -0.01em; }
+.btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; border-radius:.6rem; background:#FF6A3D; color:#0B0D12; font-weight:600; transition:background .15s, transform .1s; }
+.btn-primary:hover { background:#ff825c; }
+.btn-primary:active { transform:scale(.98); }
+.btn-ghost { display:inline-flex; align-items:center; justify-content:center; gap:.4rem; border-radius:.6rem; border:1px solid #232835; color:#E9ECF2; font-weight:500; transition:background .15s, border-color .15s; }
+.btn-ghost:hover { background:#171B24; border-color:#2f3546; }
+.nav-item { display:flex; align-items:center; gap:.75rem; padding:.6rem .75rem; border-radius:.6rem; font-size:.9rem; color:#8B93A5; transition:background .15s,color .15s; width:100%; text-align:left; }
+.nav-item:hover { background:#171B24; color:#E9ECF2; }
+.nav-item.active { background:rgba(255,106,61,0.12); color:#FF6A3D; font-weight:600; }
+.tab-item { display:flex; flex-direction:column; align-items:center; gap:2px; padding:.55rem 0 .7rem; font-size:10px; color:#5B6273; }
+.tab-item.active { color:#FF6A3D; }
+.card { background:#12151C; border:1px solid #232835; border-radius:1rem; }
+.field { width:100%; background:#0B0D12; border:1px solid #232835; border-radius:.6rem; padding:.65rem .85rem; font-size:.9rem; color:#E9ECF2; outline:none; transition:border-color .15s; }
+.field:focus { border-color:#FF6A3D; }
+.field::placeholder { color:#5B6273; }
+.label { display:block; font-size:.8rem; font-weight:500; color:#8B93A5; margin-bottom:.4rem; }
+.chip { display:inline-flex; align-items:center; gap:.3rem; font-size:.75rem; padding:.2rem .6rem; border-radius:999px; border:1px solid #232835; color:#8B93A5; }
+.chip-btn { cursor:pointer; transition:all .15s; }
+.chip-btn.active { background:#E9ECF2; color:#0B0D12; border-color:#E9ECF2; font-weight:600; }
+.pulse { animation:pulse 1.6s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+.fade-in { animation:fade .25s ease; }
+@keyframes fade { from{opacity:0; transform:translateY(4px)} to{opacity:1; transform:none} }
+.scroll-thin::-webkit-scrollbar { width:6px; }
+.scroll-thin::-webkit-scrollbar-thumb { background:#232835; border-radius:6px; }
+select.field { appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238B93A5' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right .85rem center; padding-right:2.2rem; }
