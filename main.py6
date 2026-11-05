@@ -1,0 +1,29 @@
+
+import streamlit as st
+import streamlit.components.v1 as components
+from pathlib import Path
+
+# 페이지 설정
+st.set_page_config(
+    page_title="waiter - 대리 웨이팅 플랫폼",
+    page_icon="⏳",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
+
+# HTML 파일 경로
+BASE_DIR = Path(__file__).parent
+HTML_FILE = BASE_DIR / "index.html"
+
+# HTML 파일 실행
+if HTML_FILE.exists():
+    html_code = HTML_FILE.read_text(encoding="utf-8")
+
+    components.html(
+        html_code,
+        height=1000,
+        scrolling=True
+    )
+else:
+    st.error("index.html 파일을 찾을 수 없습니다.")
+    st.info("main.py와 같은 폴더에 index.html을 넣어주세요.")
